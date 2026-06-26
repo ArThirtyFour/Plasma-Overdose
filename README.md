@@ -21,6 +21,7 @@ Plasma-specific:
 * `desktoptheme/`: Plasma Style
   * [X] Color Scheme
 * `aurorae/`: Window Decorations
+* `kwin/`: Window Decorations (KWin, this is better)
 * `wallpapers/`: Wallpaper
 
 Should available across DEs:
@@ -32,7 +33,7 @@ Should available across DEs:
 
 - Renew the code
 - A Kvantum theme, for adjusting Widget Style.
-- (Maybe) An icon theme.
+- An icon theme. We started this work in separate repo: [Plasma-Overdose-Icons](https://codeberg.org/notify-ctrl/Plasma-Overdose-Icons)
 - (Maybe) Lock screen theme.
 
 ## Font
@@ -64,6 +65,12 @@ To install the Aurorae theme run
 ```sh
 mkdir -p ~/.local/share/aurorae/themes
 cp -r aurorae/Plasma-Overdose* ~/.local/share/aurorae/themes/
+```
+
+To install the KWin window decoration run
+```sh
+mkdir -p ~/.local/share/kwin/decorations
+cp -r kwin/Plasma-Overdose-KWinDeco ~/.local/share/kwin/decorations
 ```
 
 To install the cursor theme run
